@@ -99,7 +99,7 @@ p{
 
 .form input:checked + label {
   background-color: var(--medium-grey);
-  color: var(--light-grey);
+  color: var(--white);
 }
 
 .form input:focus label {
