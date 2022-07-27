@@ -1,16 +1,19 @@
+var form = document.querySelector("form");
+var span = document.querySelector("#span");
+const cardOne = document.querySelector(".card");
+const cardTwo = document.querySelector(".submitted");
 
-/*
- buttons.addEventListener('submit', (e) =>{
-  e.preventDefault();
-  console.log('elemento', buttons.elements)
-  /*if(input[i].checked){
-    span.textContent = input[i].value;
+form.addEventListener("submit", function(event){
+
+  var data = new FormData(form);
+  var output = "";
+  for(const entry of data){
+    output = output  + entry[1] ;
   }
- })
- */
- 
-buttons.addEventListener('submit', () => {
-  span.textContent = button
+  span.innerText = output;
   cardOne.classList.add('hide');
   cardTwo.classList.remove('hide');
+  event.preventDefault();
 });
+
+

@@ -34,7 +34,8 @@ body{
 }
 
 /* CARD */
-.card {
+.card,
+.submitted {
   width: min( 70%, 350px);
   background: var(--dark-blue);
 
@@ -80,8 +81,8 @@ p{
 }
 
 .form input{
-  /*opacity:0;*/
-  /*position: fixed;*/
+  opacity:0;
+  position: fixed;
   width: 0;
 }
 
@@ -101,7 +102,7 @@ p{
   color: var(--light-grey);
 }
 
-.form input:focus + label {
+.form input:focus label {
   background-color: var(--medium-grey);
   color: var(--light-grey);
 }
