@@ -13,7 +13,7 @@ form.addEventListener("submit", function(event){
   span.innerText = output;
   cardOne.classList.add('hide');
   cardTwo.classList.remove('hide');
-  event.preventDefault();
+  event.preventDefault();//cancela o evento se for cancelável, sem parar a propagação do mesmo
 });
 
 

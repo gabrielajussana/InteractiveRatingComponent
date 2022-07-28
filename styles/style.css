@@ -170,7 +170,7 @@ p{
     height: 50px;
   }
   .form label:nth-child(-n + 4){
-    margin-left: .2rem;
+    margin-right: .2rem;
   }
   .submit{
     height: 40px
