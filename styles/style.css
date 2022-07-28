@@ -160,7 +160,7 @@ p{
   padding: .5rem;
 }
 
-@media (max-width: 600px ){
+@media (max-width: 400px ){
   .form{
     grid-row-gap: .5rem;
     grid-column-gap: .5rem;
