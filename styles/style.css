@@ -163,6 +163,7 @@ p{
 @media (max-width: 400px ){
   .form{
     grid-row-gap: .5rem;
+    grid-column-gap: .5rem;
   }
   .form label{
     width: 45px;
