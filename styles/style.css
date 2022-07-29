@@ -17,7 +17,14 @@
 body{
   background: var(--very-dark-blue);
   color: var(--white);
-  padding-top: 200px;
+  /* Pra centralizar o componente no centro, ele precisava
+   ter espaço na tela visível.
+   Podemos ter isso setando 100vh no height.
+
+   https://desenvolvimentoparaweb.com/css/unidades-css-rem-vh-vw-vmin-vmax-ex-ch/
+  */
+  height: 100vh;
+  /* padding-top: 200px; */
   font-family: 'Overpass', sans-serif;
 }
 

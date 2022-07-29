@@ -1,64 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
- 
-  <!--LINKS-->
-  <link rel="stylesheet" href="./styles/style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
-</head>
-<body class="flex-container">
-  <!-- CARD 1 -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <!--LINKS-->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body class="flex-container">
+    <!-- CARD 1 -->
+    <!-- Talvez o uso de um article aqui fosse melhor. 
+    E dentro dele poderiam ser divs mesmo, já que estamos usando apenas como um container.
+
+    https://www.w3schools.com/html/html5_semantic_elements.asp
+  -->
     <section class="card">
       <section class="card-body">
-        <section class="header flex-container"> 
-            <img src="./images/icon-star.svg" alt="icon star"/>
+        <section class="header flex-container">
+          <!-- Como essa imagem é apenas um enfeite visual, poderíamos deixar
+          o alt vazio, assim os leitores de tela a ignorariam.
+
+          https://accessibleweb.com/question-answer/when-should-i-use-a-null-or-empty-alt-tag/#:~:text=Alt%20tags%20are%20used%20to,be%20announced%20to%20the%20user.
+          -->
+          <img src="./images/icon-star.svg" alt="icon star" />
         </section>
         <section class="content">
           <h2>How did we do?</h2>
-          <p>Please let us know how we did with your support request. 
-            All feedback is appreciated to help us improve our offering!
+          <p>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
           </p>
         </section>
         <!-- FORMULÁRIO -->
         <form for="" class="form flex">
-          <input class="radio" type="radio" value="1" name="option" id="1">
+          <input class="radio" type="radio" value="1" name="option" id="1" />
           <label for="1">1</label>
-          <input class="radio" type="radio" value="2" name="option" id="2">
+          <input class="radio" type="radio" value="2" name="option" id="2" />
           <label for="2">2</label>
-          <input class="radio" type="radio" value="3" name="option" id="3">
+          <input class="radio" type="radio" value="3" name="option" id="3" />
           <label for="3">3</label>
-          <input class="radio" type="radio" value="4" name="option" id="4">   
+          <input class="radio" type="radio" value="4" name="option" id="4" />
           <label for="4">4</label>
-          <input class="radio" type="radio" value="5" name="option" id="5">
+          <input class="radio" type="radio" value="5" name="option" id="5" />
           <label for="5">5</label>
           <button type="submit" class="submit">SUBMIT</button>
         </form>
       </section>
     </section>
 
-  <!-- CARD 2-->
-  <section class="submitted flex-container hide">
-     <section class="card-body-submitted ">
-      <section class="img-submitted flex-container">
-        <img src="./images/illustration-thank-you.svg" alt="thank-you">
-      </section>
-      <section class="selected flex-container">
-        <section class="selected-text">
-          <p>You selected <span id="span">0</span> out of 5</p>
-        </section>  
-      </section>
-      <section class="text">
-        <h2>Thank you!</h2>
-        <p>We appreciate you taking the time to give a rating.
-          If you need more support, don't hesitate to get in touch!
-        </p>
+    <!-- CARD 2-->
+    <!-- Cuidado com as classes.
+      Temos algumas formas de organizar o estilo das nossas páginas.
+      Podemos fazer orientado a blocos, elementos, componentes e funcional.
+
+      a classe 'flex-container' não só cria um "flex-container", mas também centraliza
+      os filhos nos dois eixos.
+    -->
+    <section class="submitted flex-container hide">
+      <section class="card-body-submitted">
+        <section class="img-submitted flex-container">
+          <img src="./images/illustration-thank-you.svg" alt="thank-you" />
+        </section>
+        <section class="selected flex-container">
+          <section class="selected-text">
+            <!-- apesar de termos 0 como valor default, ao submeter esse valor é apagado.
+            Um check antes de setar o novo valor já resolveria
+            -->
+            <p>You selected <span id="span">0</span> out of 5</p>
+          </section>
+        </section>
+        <section class="text">
+          <h2>Thank you!</h2>
+          <p>
+            We appreciate you taking the time to give a rating. If you need more
+            support, don't hesitate to get in touch!
+          </p>
+        </section>
       </section>
     </section>
-  </section>
-  <script type="text/javascript" src="./scripts/script.js"></script> 
-</body>
+    <script type="text/javascript" src="./scripts/script.js"></script>
+  </body>
 </html>
