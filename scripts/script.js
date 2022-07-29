@@ -1,3 +1,4 @@
+// É preferível o uso do 'let' ou 'const'
 var form = document.querySelector("form");
 var span = document.querySelector("#span");
 const cardOne = document.querySelector(".card");
